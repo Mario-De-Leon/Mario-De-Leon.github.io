@@ -55,7 +55,8 @@ function renderHTML(POrdenados){
         if(p.image != undefined){
             columnas += `
             <div class="col-md-3 "> 
-            <div class="card border border-dark mb-3" style="max-width: 18rem; min-height:350px">
+            <div class="card border border-dark mb-3" style="max-width: 18rem;  min-height:350px; background: rgb(2,0,36);
+            background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
                 <div class="card-header border-dark two-row text-black text-center">${p.name}
                 </div>
                 <div class="card-body text-success">
