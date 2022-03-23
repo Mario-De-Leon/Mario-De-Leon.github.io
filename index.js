@@ -54,16 +54,16 @@ function renderHTML(POrdenados){
         acumulador++;
         if(p.image != undefined){
             columnas += `
-            <div class="col-md-3 "> 
-            <div class="card border border-dark mb-3" style="max-width: 18rem;  min-height:350px; background: rgb(2,0,36);
+            <div class="d-flex justify-content-center col-sm-6 col-lg-3 "> 
+            <div class="card border border-dark mb-3 " style="max-width: 18rem;  min-height:350px; background: rgb(2,0,36);
             background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);">
                 <div class="card-header border-dark two-row text-black text-center">${p.name}
                 </div>
                 <div class="card-body text-success">
                     <img class="card-img-top" src="${p.image}" alt="">
                 </div>
-                <p class="card-text">ID Personaje: ${p.id}</p>
-                <p class="card-text">${p.species}</p>
+                <p class="card-text text-left">ID Personaje: ${p.id}</p>
+                <p class="card-text text-left">${p.species}</p>
                 <a href="#" class="btn btn-primary disabled" >${p.gender}</a>
             </div>
             </div>
